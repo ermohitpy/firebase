@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169359333670",
+    "project_id": "setup-706aa",
+    "storage_bucket": "setup-706aa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169359333670:android:c9518c1955598ca93a89e7",
+        "android_client_info": {
+          "package_name": "com.firebasesetup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7O1xpGAnJZX8k1LV1gZY84fYXnGeHPKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

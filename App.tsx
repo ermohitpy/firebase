@@ -5,6 +5,7 @@
  * @format
  */
 
+import firebase from '@react-native-firebase/app';
 import { NewAppScreen } from '@react-native/new-app-screen';
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
 import {
@@ -14,6 +15,8 @@ import {
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
+
+  console.log("Firebase App Initialized:", firebase.apps.length > 0);
 
   return (
     <SafeAreaProvider>
