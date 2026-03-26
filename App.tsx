@@ -4,13 +4,14 @@
  */
 
 import { useEffect } from 'react';
-import { StatusBar, StyleSheet, Text, useColorScheme } from 'react-native';
+import { StatusBar, StyleSheet, useColorScheme } from 'react-native';
 import {
   SafeAreaProvider,
   SafeAreaView,
 } from 'react-native-safe-area-context';
 import { foregroundNotificationListener, getFCMToken, requestUserPermission, tokenRefreshListener } from './src/services/notificationService';
 import { getMessaging } from '@react-native-firebase/messaging';
+import Analytics from './src/services/screens/Analytics';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -56,7 +57,7 @@ function App() {
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-        <Text style={styles.txt}>{'Firebase Push Notifications + Notifee'}</Text>
+        <Analytics/>
       </SafeAreaView>
     </SafeAreaProvider>
   );
@@ -67,8 +68,6 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   txt: {
     color: 'white'

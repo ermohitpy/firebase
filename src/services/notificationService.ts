@@ -2,9 +2,9 @@ import { AuthorizationStatus, getMessaging, requestPermission } from '@react-nat
 import { PermissionsAndroid, Platform } from 'react-native';
 import notifee, { AndroidImportance } from '@notifee/react-native';
 
-export async function requestUserPermission() {
-    const messagingInstance = getMessaging();
+const messagingInstance = getMessaging();
 
+export async function requestUserPermission() {
     const authStatus = await requestPermission(messagingInstance);
     const isEnabled =
         authStatus === AuthorizationStatus.AUTHORIZED ||
