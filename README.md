@@ -4,27 +4,6 @@ This repository contains step-by-step implementations of Firebase services in **
 
 ---
 
-# 🔐 Firebase Setup Required
-
-Before running the project locally, download your Firebase configuration files from:
-
-Firebase Console → Project Settings → General → Your apps
-
-Then place them here:
-
-android/app/google-services.json  
-ios/GoogleService-Info.plist
-
-⚠️ These files are intentionally excluded from this repository for security reasons.
-
-Without these files, the app will not run correctly.
-
-Each branch in this repository uses the same Firebase setup process, so you only need to add these files once.
-
-Each Firebase feature is implemented in a separate branch with clean examples and working code.
-
----
-
 # 📦 Included Integrations
 
 Switch branches to explore each implementation:
@@ -64,17 +43,11 @@ real production patterns
 
 # 📖 Medium Articles (Full Step-by-Step Guides)
 
-Firebase Analytics Guide:
+📊 [Firebase Analytics Guide](https://medium.com/@ermohit2k18/implement-firebase-analytics-in-react-native-step-by-step-guide-2026-edition-a8e551c63aa5)
 
-https://github.com/ermohitpy/firebase/tree/analytics
+🔔 [Firebase Push Notifications Guide](https://medium.com/@ermohit2k18/production-ready-push-notifications-in-react-native-using-firebase-notifee-step-by-step-guide-41ad210b136b)
 
-Firebase Push Notifications Guide:
-
-https://github.com/ermohitpy/firebase/tree/push_notification
-
-Firebase Remote Config Guide:
-
-https://github.com/ermohitpy/firebase/tree/remote_config
+⚙️ [Firebase Remote Config Guide](https://medium.com/@ermohit2k18/️-implement-firebase-remote-config-in-react-native-feature-flags-without-app-updates-77e9cc8dd80f)
 
 Crashlytics Guide:
 
@@ -84,7 +57,7 @@ Coming soon
 
 # 🛠 Requirements
 
-React Native >= 0.72  
+React Native >= 0.80
 React Native Firebase latest version  
 Android Studio / Xcode setup complete  
 
