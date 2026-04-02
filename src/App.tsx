@@ -9,7 +9,7 @@ import {
   SafeAreaProvider,
   SafeAreaView,
 } from 'react-native-safe-area-context';
-import { foregroundNotificationListener, getFCMToken, requestUserPermission, tokenRefreshListener } from './src/services/notificationService';
+import { foregroundNotificationListener, getFCMToken, requestUserPermission, tokenRefreshListener } from './services/notificationService';
 import { getInitialNotification, getMessaging, onNotificationOpenedApp } from '@react-native-firebase/messaging';
 
 const messagingInstance = getMessaging();
