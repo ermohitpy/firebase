@@ -1,97 +1,114 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🔥 React Native Firebase Integration Series (Production-Ready Examples)
 
-# Getting Started
+This repository contains step-by-step implementations of Firebase services in **React Native using React Native Firebase (latest modular API)**.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+# 🔐 Firebase Setup Required
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+Before running the project locally, download your Firebase configuration files from:
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Firebase Console → Project Settings → General → Your apps
 
-```sh
-# Using npm
-npm start
+Then place them here:
 
-# OR using Yarn
-yarn start
-```
+android/app/google-services.json  
+ios/GoogleService-Info.plist
 
-## Step 2: Build and run your app
+⚠️ These files are intentionally excluded from this repository for security reasons.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Without these files, the app will not run correctly.
 
-### Android
+Each branch in this repository uses the same Firebase setup process, so you only need to add these files once.
 
-```sh
-# Using npm
-npm run android
+Each Firebase feature is implemented in a separate branch with clean examples and working code.
 
-# OR using Yarn
-yarn android
-```
+---
 
-### iOS
+# 📦 Included Integrations
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+Switch branches to explore each implementation:
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+📊 Firebase Analytics  
+Branch: analytics
 
-```sh
-bundle install
-```
+🔔 Firebase Push Notifications (FCM + Notifee)  
+Branch: push_notification
 
-Then, and every time you update your native dependencies, run:
+⚙️ Firebase Remote Config  
+Branch: remote_config
 
-```sh
-bundle exec pod install
-```
+🚨 Firebase Crashlytics  
+Branch: crashlytics (coming soon)
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+---
 
-```sh
-# Using npm
-npm run ios
+# 🚀 Why This Repository Exists
 
-# OR using Yarn
-yarn ios
-```
+This project helps React Native developers learn how to integrate Firebase services with production-ready setup patterns including:
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+feature tracking  
+push notifications  
+feature flags  
+dynamic configuration  
+crash monitoring  
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+Each branch contains:
 
-## Step 3: Modify your app
+working example code  
+clean service structure  
+best practices  
+real production patterns  
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+# 📖 Medium Articles (Full Step-by-Step Guides)
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+Firebase Analytics Guide:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+https://github.com/ermohitpy/firebase/tree/analytics
 
-## Congratulations! :tada:
+Firebase Push Notifications Guide:
 
-You've successfully run and modified your React Native App. :partying_face:
+https://github.com/ermohitpy/firebase/tree/push_notification
 
-### Now what?
+Firebase Remote Config Guide:
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+https://github.com/ermohitpy/firebase/tree/remote_config
 
-# Troubleshooting
+Crashlytics Guide:
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Coming soon
 
-# Learn More
+---
 
-To learn more about React Native, take a look at the following resources:
+# 🛠 Requirements
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+React Native >= 0.72  
+React Native Firebase latest version  
+Android Studio / Xcode setup complete  
+
+---
+
+# 🔐 Firebase Setup Required
+
+Before running the project locally:
+
+Add your Firebase configuration files:
+
+android/app/google-services.json  
+ios/GoogleService-Info.plist
+
+These files are excluded for security reasons.
+
+---
+
+# 🤝 Contributions & Suggestions
+
+If this repository helped you:
+
+⭐ Star the repo  
+Share feedback  
+Suggest topics you'd like covered next  
+
+More Firebase + React Native implementation guides coming soon.
