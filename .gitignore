@@ -35,6 +35,10 @@ local.properties
 !debug.keystore
 .kotlin/
 
+# Firebase / Google Services
+**/google-services.json
+**/GoogleService-Info.plist
+
 # node.js
 #
 node_modules/
@@ -59,6 +63,7 @@ yarn-error.log
 # Ruby / CocoaPods
 **/Pods/
 /vendor/bundle/
+**/Podfile.lock
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
